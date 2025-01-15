@@ -3,10 +3,9 @@
 note="notes.txt"
 
 #allow user to add notes to the text (.txt)
-if [[ $1 == 'add' ]]; then
+if [[ $1 == "add" ]]; then
     echo "$(date +'%F %T') - $2" >> $note
-    sleep 1
-    echo Note has been added
+    echo Note added successfully
 #allow user to show them the whole note
 elif [[ $1 == 'list' ]]; then
     echo .
